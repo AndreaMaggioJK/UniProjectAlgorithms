@@ -1,0 +1,20 @@
+UnityMerge:List.o  unity.o List_test.o merge.o test_merge.o
+	gcc -o UnityMerge List.o  unity.o merge.o test_merge.o
+
+
+clean:
+	rm -f *.o
+	rm UnityMerge
+	echo Clean done
+
+unity.o: unity.c unity.h unity_internals.h
+	gcc -c unity.c
+
+List.o: List.c List.h
+	gcc -c List.c
+
+merge.o: merge.c List.h
+	gcc -c merge.c
+
+test_merge.o: test_merge.c
+	gcc -c test_merge.c	

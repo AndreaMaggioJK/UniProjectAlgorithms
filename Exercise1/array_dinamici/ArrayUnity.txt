@@ -1,0 +1,17 @@
+Unity:dinamic_array.o  unity.o dinamic_array_test.o
+	gcc -o Unity dinamic_array.o  unity.o dinamic_array_test.o
+
+
+clean:
+	rm -f *.o
+	rm Unity
+	echo Clean done
+
+unity.o: unity.c unity.h unity_internals.h
+	gcc -c unity.c
+
+dinamic_array.o: dinamic_array.c List.h
+	gcc -c dinamic_array.c
+
+dinamic_array_test.o: dinamic_array_test.c List.h
+	gcc -c dinamic_array_test.c
