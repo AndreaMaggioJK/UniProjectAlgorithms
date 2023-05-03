@@ -4,4 +4,7 @@ The project is developed in 4 exercises:
   Tests have been created to verify the correctness of all functions.
 - Dynamic programming.
 Given two strings s1 and s2, not necessarily of the same length, determine the minimum number of operations necessary to transform the string s2 into s1
-  
+- Implementation of the Union Find Set
+- Graph, insertion sort, heap sort and kruskal algorithm
+
+Unit_Tests are used for each function.
